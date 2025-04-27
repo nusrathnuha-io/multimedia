@@ -372,3 +372,87 @@ header .navbar ul li a:hover{
 .fade_animation {
   opacity: 0;
 }
+
+
+/* ================== Responsive Design ================== */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .experience .timeline {
+    padding: 20px;
+  }
+
+  .timeline .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .timeline .container.left, .timeline .container.right {
+    left: 0;
+    margin-left: 0;
+  }
+
+  .timeline::after {
+    left: 0;
+  }
+
+  .timeline .content {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .desc h3 {
+    font-size: 18px;
+  }
+
+  .desc p {
+    font-size: 14px;
+  }
+
+  .tag h2 {
+    font-size: 20px;
+  }
+
+  .quote h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .experience .timeline {
+    padding: 30px;
+  }
+
+  .timeline .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .desc h3 {
+    font-size: 20px;
+  }
+
+  .desc p {
+    font-size: 16px;
+  }
+
+  .tag h2 {
+    font-size: 24px;
+  }
+}
+
+/* Large devices (laptops, desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .timeline .container {
+    width: 45%;
+  }
+}

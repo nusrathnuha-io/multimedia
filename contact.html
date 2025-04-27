@@ -1,32 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--<link rel="stylesheet" href="./style.css">-->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link id='favicon' rel="shortcut icon" href="assets/images/favhand.png" type="image/x-png">
-        <title>Projects | Portfolio Nusrath Nuha</title>
-    
-    
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="./style.css">-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='favicon' rel="shortcut icon" href="assets/images/favhand.png" type="image/x-png">
+    <title>Projects | Portfolio Nusrath Nuha</title>
+
+    <style>
+    /* Responsive styles */
+    @media (max-width: 1024px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .content {
+            width: 90%;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h2.heading {
+            font-size: 2rem;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content form {
+            width: 100%;
+        }
+        .backbtn {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .backbtn .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .hero video.back-video {
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2.heading {
+            font-size: 1.5rem;
+        }
+        .field input, .message textarea {
+            font-size: 14px;
+            padding: 10px;
+        }
+        .button-area button {
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+        .image-box img {
+            width: 80%;
+        }
+    }
+    </style>
+
+</head>
+
 <body>
-   
-    
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <!-- Background Video -->
         <div class="hero">
-
             <video autoplay loop muted plays-inline class="back-video">
                 <source src="vedio.mp4" type="video/mp4"> 
             </video>
-        
-            </div>
+        </div>
+
         <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
 
         <div class="container">
@@ -65,8 +121,9 @@
                 <i class="fas fa-arrow-left"></i>
                 <span>Back to Home</span>
           </a>
-          </div>
+        </div>
     </section>
     <!-- Contact section ends -->
+
 </body>
 </html>
